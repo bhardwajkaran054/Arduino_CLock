@@ -38,15 +38,15 @@ void loop()
   Serial.print(dt.hour);   Serial.print(":");
   Serial.print(dt.minute); Serial.print(":");
   Serial.print(dt.second); Serial.println("");
-
+  
   //Trigger Start Condition
-  if (dt.hour == 13 && dt.minute == 2 && dt.second == 0)
+  if (dt.hour == 13 && dt.minute == 44 && dt.second == 0)
   {
     Serial.println("Switch Triggered");
     digitalWrite(12, HIGH); //Note Relay funtions reverse HIGH means OFF
   }
   //Trigger End Condition
-  if (dt.hour == 13 && dt.minute == 20 && dt.second == 0)
+  if (dt.hour == 13 && dt.minute == 44 && dt.second == 30)
   {
     Serial.println("Switch Triggered");
     digitalWrite(12, LOW); //Note Relay funtions reverse LOW means ON
