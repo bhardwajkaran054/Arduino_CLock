@@ -1,4 +1,4 @@
-
+//code by Karan
 #include <Wire.h>
 #include <DS3231.h>
 
